@@ -6,6 +6,13 @@ export function fetchFaqs() {
       process.env.NEXT_PUBLIC_BACKEND_URL +
         "/api/faqs?populate=*&pagination[pageSize]=10"
     );
-    console.log(data)
+    const faqs = data?.data?.map((items,index)=>{
+      return{
+        ...items.attributes,
+        faqsId:items.id,
+        faqIndex:index + 1
+      }
+    })
+    resolve(faqs)
   });
 }
