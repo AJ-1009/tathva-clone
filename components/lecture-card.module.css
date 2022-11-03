@@ -1,0 +1,37 @@
+.date-wrapper {
+  width: 100%;
+  border-bottom: 5px solid #e8e8e8;
+}
+.date {
+  width: fit-content;
+  background-color: #e8e8e8;
+  padding: 5px 6px 0px;
+  text-transform: uppercase;
+}
+
+.name {
+  color: #e8e8e8;
+  font-size: 36px;
+}
+.register {
+  width: 120px;
+  height: 40px;
+  background-color: #e8e8e8;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  text-transform: uppercase;
+}
+.learn-more {
+  width: 120px;
+  height: 40px;
+  color: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+}

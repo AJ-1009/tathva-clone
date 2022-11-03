@@ -1,0 +1,46 @@
+.notch {
+  width: 100%;
+  border-bottom: 3px solid #e8e8e8;
+}
+.notch-heading {
+  background-color: #e8e8e8;
+  padding: 4px 12px 2px;
+  text-transform: uppercase;
+  width: fit-content;
+}
+.name {
+  font-size: 36px;
+  color: #e8e8e8;
+}
+.img-wrapper {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #313131;
+}
+.img-1 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.points,
+.description {
+  color: hsla(0, 0%, 91%, 0.5);
+}
+.event-heading {
+  color: hsla(0, 0%, 91%, 0.5);
+  text-transform: uppercase;
+}
+
+.event {
+  color: #e8e8e8;
+}
