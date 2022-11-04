@@ -33,6 +33,7 @@ export default function faqs() {
       }
     });
     setfilteredfaq(filtered);
+    setlength(0)
   }, [filter, faqs]);
   return (
     <div>
@@ -52,7 +53,12 @@ export default function faqs() {
             question={faq.question}
             answer={faq.answer}
             key={index}
-            onClick={() => setlength(faq.faqIndex)}
+            onClick={() => {
+              setlength(faq.faqIndex);
+              if (faq.faqIndex == length) {
+                setlength(0);
+              }
+            }}
             check={faq.faqIndex == length}
           />
         ))}
@@ -69,11 +75,13 @@ function FilterItem({ label, check, onClick }) {
   );
 }
 
-function OpenFaq({ question, answer,check,onClick }) {
+function OpenFaq({ question, answer, check, onClick }) {
   return (
     <div>
-      <div className="question" onClick={onClick} >{question}</div>
-      <div className={`answer ${check ? "faq-check" : ""}`} >{answer}</div>
+      <div className="question" onClick={onClick}>
+        {question}
+      </div>
+      <div className={`answer ${check ? "faq-check" : ""}`}>{answer}</div>
     </div>
   );
 }
