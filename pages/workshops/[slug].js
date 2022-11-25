@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { workshopSlug } from "../api/workshop";
 
-export default function slug() {
+export default function Slug() {
   const router = useRouter();
   const [workshop, setworkshop] = useState(null);
   useEffect(() => {

@@ -12,7 +12,7 @@ const categories = [
   "Miscellaneous",
 ];
 
-function index() {
+function Index() {
   const [workshops, setworkshops] = useState([]);
   const [filter, setfilter] = useState("All");
   const [filteredworkshop, setfilteredworkshop] = useState([]);
@@ -70,7 +70,7 @@ function index() {
   }
 }
 
-export default index;
+export default Index;
 
 function FilterItem({ label, check, onClick }) {
   return (

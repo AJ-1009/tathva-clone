@@ -11,7 +11,7 @@ const categories = [
   "PROSHOWS",
 ];
 
-export default function faqs() {
+export default function Faqs() {
   const [faqs, setfaqs] = useState([]);
   const [filteredfaq, setfilteredfaq] = useState([]);
   const [filter, setfilter] = useState("ALL");
@@ -33,7 +33,7 @@ export default function faqs() {
       }
     });
     setfilteredfaq(filtered);
-    setlength(0)
+    setlength(0);
   }, [filter, faqs]);
   return (
     <div>

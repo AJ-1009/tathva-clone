@@ -1,15 +1,7 @@
 import Head from "next/head";
-import { useEffect, useState } from "react";
-import { fetchcompetitions } from "./api/competition";
 
 export default function Home() {
-  const [competition, setcompetition] = useState([]);
-
-  useEffect(() => {
-    fetchcompetitions().then((data) => {
-      setcompetition(data);
-    });
-  }, []);
+  console.log("comptitions workshops lectures events faqs are routes")
   return (
     <div>
       <Head>

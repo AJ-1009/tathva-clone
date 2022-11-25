@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import LectureCard from "../../components/LectureCard";
 import { fetchLectures } from "../api/lecture";
 
-function lecturesPage() {
+function LecturesPage() {
   const [lectures, setlectures] = useState([]);
   const router = useRouter()
   useEffect(() => {
@@ -25,4 +25,4 @@ function lecturesPage() {
   );
 }
 
-export default lecturesPage;
+export default LecturesPage;

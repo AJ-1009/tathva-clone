@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { fetchEvents } from "../api/events";
 import EventCard from "../../components/EventCard";
 
-function index() {
+function Index() {
   const [events, setevents] = useState([]);
   useEffect(() => {
     fetchEvents().then((data) => {
@@ -32,4 +32,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;
